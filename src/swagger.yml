@@ -1,0 +1,27 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: hello
+  description: this is prototype app
+host: 'localhost:8000'
+basePath: /apiserver
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /hello:
+    get:
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/Test'
+definitions:
+  Test:
+    type: object
+    properties:
+      foo:
+        type: string

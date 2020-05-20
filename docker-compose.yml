@@ -1,0 +1,12 @@
+ # composeファイルのバーション指定
+version: '3'
+services:
+  # service名
+  app: 
+   # ビルドに使用するDockerfileがあるディレクトリ指定
+    build: .
+    # コンテナの起動永続化
+    tty: true 
+    # マウントディレクトリ指定
+    #volumes:
+    #  - .:/go/src/work/
