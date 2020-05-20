@@ -4,7 +4,7 @@ info:
   title: hello
   description: this is prototype app
 host: 'localhost:8000'
-basePath: /apiserver
+basePath: /test
 schemes:
   - http
 consumes:
@@ -12,7 +12,7 @@ consumes:
 produces:
   - application/json
 paths:
-  /hello:
+  /health:
     get:
       responses:
         200:
