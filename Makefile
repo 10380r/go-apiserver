@@ -4,3 +4,7 @@ swagger-generate:
 	swagger generate server -f swagger.yml
 go-run:
 	go run cmd/hello-server/main.go --port=8000
+docker-runapp:
+	docker-compose build && \
+	docker-compose up -d && \
+	docker-compose exec app go run cmd/hello-server/main.go --port=8000
